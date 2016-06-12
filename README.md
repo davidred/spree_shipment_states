@@ -1,7 +1,7 @@
 SpreeShipmentStates
 ===================
 
-Introduction goes here.
+Adds the ability to "pick up" and "drop off" a Spree::Shipment. This modifies the admin panel to not only allow an order to be "Shipped", but additionaly, it can be "Picked Up" and "Dropped Off"
 
 Installation
 ------------
