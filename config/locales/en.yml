@@ -10,11 +10,11 @@ en:
     shipment_mailer:
       picked_up_email:
         dear_customer: Dear Customer,
-        instructions: Your order %{number} has been picked up
+        instructions: Your order has been picked up
         subject: Pickup Notification
         thanks: Thank you for your business.
       dropped_off_email:
         dear_customer: Dear Customer,
-        instructions: Your order %{number} has been dropped off
+        instructions: Your order has been dropped off
         subject: Dropoff Notification
         thanks: Thank you for your business.
