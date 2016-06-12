@@ -1,0 +1,9 @@
+.label-picked_up,
+.label-dropped_off
+{
+  background-color: #7DB942;
+
+  a {
+    color: white !important;
+  }
+}

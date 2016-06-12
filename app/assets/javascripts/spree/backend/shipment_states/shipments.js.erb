@@ -1,0 +1,40 @@
+// Shipments AJAX API
+$(document).ready(function () {
+  'use strict';
+
+  // handle pickup click
+  $('[data-hook=admin_shipment_form] a.pickup').on('click', function () {
+    var link = $(this);
+    var shipment_number = link.data('shipment-number');
+    var url = Spree.url(Spree.routes.shipments_api + '/' + shipment_number + '/pickup.json');
+    $.ajax({
+      type: 'PUT',
+      url: url,
+      data: {
+        token: Spree.api_key
+      }
+    }).done(function () {
+      window.location.reload();
+    }).error(function (msg) {
+      console.log(msg);
+    });
+  });
+
+  // handle dropoff click
+  $('[data-hook=admin_shipment_form] a.dropoff').on('click', function () {
+    var link = $(this);
+    var shipment_number = link.data('shipment-number');
+    var url = Spree.url(Spree.routes.shipments_api + '/' + shipment_number + '/dropoff.json');
+    $.ajax({
+      type: 'PUT',
+      url: url,
+      data: {
+        token: Spree.api_key
+      }
+    }).done(function () {
+      window.location.reload();
+    }).error(function (msg) {
+      console.log(msg);
+    });
+  });
+});
