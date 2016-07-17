@@ -9,12 +9,15 @@ en:
       dropped_off: dropped off
     shipment_mailer:
       picked_up_email:
+        greeting: Your laundry was picked up!
         dear_customer: Dear Customer,
-        instructions: Your order has been picked up
-        subject: Pickup Notification
-        thanks: Thank you for your business.
+        instructions: ! "Your laundry is scheduled for drop off:"
+        free_time: "While we take care of laundry, spend your extra time catching up with friends, or with your favorite show. So many choices."
+        dropoff_time: ! "%{dropoff_date}, between %{dropoff_low} and %{dropoff_high}"
+        subject: Pick Up Notification
+        thanks: See you then!
       dropped_off_email:
+        greeting: Your laundry was dropped off!
         dear_customer: Dear Customer,
-        instructions: Your order has been dropped off
-        subject: Dropoff Notification
-        thanks: Thank you for your business.
+        subject: Drop Off Notification
+        thanks: So fresh so clean. Till next time!
